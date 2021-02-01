@@ -35,6 +35,10 @@ module.exports = {
     }),
   ],
 
+  output: {
+    publicPath: "/",
+  },
+
   module: {
     rules: [
       {
@@ -71,6 +75,10 @@ module.exports = {
             },
           },
         ],
+      },
+      {
+        test: /\.svg$/,
+        loader: "svg-inline-loader",
       },
     ],
   },
