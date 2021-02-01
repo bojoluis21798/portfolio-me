@@ -1,0 +1,80 @@
+@keyframes rotating {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotating-inverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.skills {
+  padding: 7rem 0;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+
+  > svg {
+    z-index: 1;
+    width: 30rem;
+    height: 30rem;
+  }
+
+  &__logo {
+    position: absolute;
+    top: 5rem;
+    left: 14rem;
+
+    width: 30rem;
+    height: 30rem;
+
+    // border-radius: 50%;
+    // border: 1px solid black;
+
+    animation-name: rotating;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    > svg {
+      position: absolute;
+      width: 10rem;
+      height: 10rem;
+
+      animation-name: rotating-inverse;
+      animation-duration: 60s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+
+      &:nth-child(1) {
+        left: 10rem;
+        top: -6rem;
+      }
+      &:nth-child(2) {
+        left: 25rem;
+        top: 5rem;
+      }
+      &:nth-child(3) {
+        left: 20rem;
+        top: 22rem;
+      }
+      &:nth-child(4) {
+        left: 1rem;
+        top: 23rem;
+      }
+      &:nth-child(5) {
+        left: -5rem;
+        top: 7rem;
+      }
+    }
+  }
+}
