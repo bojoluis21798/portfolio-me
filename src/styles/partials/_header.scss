@@ -1,0 +1,22 @@
+.header {
+  margin: 1rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__nav {
+    display: flex;
+
+    > h2 {
+      margin-left: 2rem;
+      font-family: $montserrat;
+    }
+  }
+
+  h1 {
+    font-family: $ubuntu;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+  }
+}

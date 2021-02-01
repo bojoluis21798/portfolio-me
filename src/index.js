@@ -1,7 +1,8 @@
 import "./styles/main.scss";
 
 const template = require("./main.ejs");
-const header = require("./partials/header.ejs");
 
-const render = template({ header });
+const partials = require("./partials");
+
+const render = template(partials);
 document.getElementById("app").innerHTML = render;
