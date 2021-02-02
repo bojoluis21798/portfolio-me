@@ -3,4 +3,5 @@ module.exports = {
   intro: require("./intro.ejs"),
   bio: require("./bio.ejs"),
   skills: require("./skills.ejs"),
+  resume: require("./resume.ejs"),
 };

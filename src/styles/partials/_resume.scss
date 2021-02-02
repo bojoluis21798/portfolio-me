@@ -1,0 +1,46 @@
+.resume {
+  margin: $space-between-partials 0;
+  font-family: $montserrat;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  svg {
+    height: 6rem;
+    width: auto;
+  }
+
+  &__entry {
+    padding: 0 2rem;
+    padding-bottom: 5rem;
+    flex-basis: 45rem;
+  }
+
+  .entry__head {
+    display: flex;
+    align-items: flex-end;
+    h1 {
+      margin: 1rem 0;
+      font-size: 3rem;
+      margin-left: 1rem;
+    }
+  }
+
+  .text--blue {
+    font-weight: 800;
+    color: $blue;
+  }
+
+  .entry__text {
+    font-size: 2rem;
+  }
+
+  .entry__medal {
+    margin-left: 0.5rem;
+    height: max-content;
+    svg {
+      height: 3rem;
+      width: auto;
+    }
+  }
+}
