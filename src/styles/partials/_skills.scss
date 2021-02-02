@@ -19,14 +19,26 @@
 .skills {
   margin: $space-between-partials 0;
   padding: 7rem 0;
+  padding-top: 20rem;
   position: relative;
 
   display: flex;
   justify-content: center;
 
+  font-family: $montserrat;
+
+  h1 {
+    position: absolute;
+    left: 39%;
+    top: 0;
+    z-index: 1;
+    font-size: 5rem;
+    font-weight: 800;
+  }
+
   svg.clouds2 {
     position: absolute;
-    top: 7rem;
+    top: 0rem;
     width: auto;
     height: 69rem;
   }

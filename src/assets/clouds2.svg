@@ -1,13 +1,7 @@
-<svg class="clouds2" width="617" height="408" viewBox="0 0 617 408" fill="none" xmlns="http://www.w3.org/2000/svg">
-<ellipse rx="22.041" ry="31.0005" transform="matrix(0.749772 0.661697 0.638332 -0.769762 290.879 341.817)" fill="#E9F4FF"/>
-<ellipse rx="25.1475" ry="34.0028" transform="matrix(0.749772 0.661697 0.638332 -0.769762 324.669 361.678)" fill="#E9F4FF"/>
-<ellipse rx="17.0608" ry="21.5048" transform="matrix(0.749772 0.661697 0.638332 -0.769762 322.27 322.76)" fill="#E9F4FF"/>
+<svg class="clouds2" width="617" height="365" viewBox="0 0 617 365" fill="none" xmlns="http://www.w3.org/2000/svg">
 <ellipse rx="53.6506" ry="50.1217" transform="matrix(0.998886 0.0471853 0.0493275 -0.998783 457.798 311.375)" fill="#E9F4FF"/>
 <ellipse rx="61.2121" ry="54.9758" transform="matrix(0.998886 0.0471853 0.0493275 -0.998783 552.507 303.756)" fill="#E9F4FF"/>
 <ellipse rx="41.5282" ry="34.7691" transform="matrix(0.998886 0.0471853 0.0493275 -0.998783 489.784 256.111)" fill="#E9F4FF"/>
-<ellipse rx="41.1164" ry="38.2253" transform="matrix(0.998676 0.0514355 0.0539597 -0.998543 461.445 153.616)" fill="#E9F4FF"/>
-<ellipse rx="46.9113" ry="41.9273" transform="matrix(0.998676 0.0514355 0.0539597 -0.998543 534.053 148.131)" fill="#E9F4FF"/>
-<ellipse rx="31.8261" ry="26.5166" transform="matrix(0.998676 0.0514355 0.0539597 -0.998543 486.143 111.58)" fill="#E9F4FF"/>
 <ellipse rx="84.4674" ry="87.3821" transform="matrix(0.938423 -0.34549 -0.350997 -0.936377 142.477 243.587)" fill="#E9F4FF"/>
 <ellipse rx="96.3721" ry="95.8448" transform="matrix(0.938423 -0.34549 -0.350997 -0.936377 274.289 172.619)" fill="#E9F4FF"/>
 <ellipse rx="65.3819" ry="60.6164" transform="matrix(0.938423 -0.34549 -0.350997 -0.936377 150.946 135.113)" fill="#E9F4FF"/>
