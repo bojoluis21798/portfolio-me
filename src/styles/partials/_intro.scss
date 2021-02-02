@@ -11,10 +11,13 @@
 }
 
 .intro {
+  margin: $space-between-partials 0;
+  margin-top: 10rem;
+  position: relative;
   &__background {
     position: absolute;
-    right: 1rem;
-    top: 1rem;
+    right: 0;
+    top: -5rem;
     z-index: -1;
 
     width: 43rem;
