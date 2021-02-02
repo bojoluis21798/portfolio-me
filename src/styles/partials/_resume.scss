@@ -14,6 +14,10 @@
     padding: 0 2rem;
     padding-bottom: 5rem;
     flex-basis: 45rem;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
   }
 
   .entry__head {
