@@ -1,0 +1,56 @@
+.contacts {
+  margin: $space-between-partials 0;
+  padding: 0 5rem;
+
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  font-family: $montserrat;
+
+  .message-group,
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .message-group {
+    label {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    button {
+      background-color: $blue;
+      border: 0;
+      outline: none;
+      color: #fff;
+      padding: 2rem;
+      font-family: inherit;
+      border-radius: 0.5rem;
+      font-size: 2.5rem;
+      font-weight: 600;
+    }
+
+    input,
+    textarea {
+      border: 0;
+      outline: none;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+
+      height: 4rem;
+      padding: 1rem;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: 4rem;
+      color: $blue;
+    }
+
+    textarea {
+      height: 50rem;
+    }
+  }
+}
