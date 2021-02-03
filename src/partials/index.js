@@ -1,9 +1,9 @@
-module.exports = {
-  header: require("./header.ejs"),
-  intro: require("./intro.ejs"),
-  bio: require("./bio.ejs"),
-  skills: require("./skills.ejs"),
-  resume: require("./resume.ejs"),
-  portfolio: require("./portfolio.ejs"),
-  contacts: require("./contacts.ejs"),
-};
+module.exports = [
+  require("./header.ejs")(),
+  require("./intro.ejs")(),
+  require("./bio.ejs")(),
+  require("./skills.ejs")(),
+  require("./resume.ejs")(),
+  require("./portfolio.ejs")(),
+  require("./contacts.ejs")(),
+];

@@ -28,15 +28,16 @@ module.exports = {
 
   plugins: [
     new webpack.ProgressPlugin(),
-    new MiniCssExtractPlugin({ filename: "main.[contenthash].css" }),
+    new MiniCssExtractPlugin({ filename: "main.css" }),
     new HtmlWebpackPlugin({
       inject: true,
-      template: "index.html",
+      fileName: "index.html",
+      template: "./src/main.ejs",
     }),
   ],
 
   output: {
-    publicPath: "/",
+    publicPath: "",
   },
 
   module: {
