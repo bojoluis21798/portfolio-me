@@ -1,17 +1,24 @@
 .contacts {
   margin: $space-between-partials 0;
+  margin-bottom: $space-between-partials - 10rem;
   padding: 0 5rem;
 
-  display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 
   font-family: $montserrat;
 
   .message-group,
-  form {
+  form,
+  .social-group {
     display: flex;
     flex-direction: column;
+  }
+
+  &,
+  .social-links,
+  .mail {
+    display: flex;
   }
 
   .message-group {
@@ -52,5 +59,24 @@
     textarea {
       height: 50rem;
     }
+  }
+
+  svg {
+    margin: 1.5rem;
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .social-links {
+    margin-top: 2rem;
+  }
+
+  .mail {
+    p {
+      font-family: $montserrat;
+      font-weight: 400;
+      font-size: 2.5rem;
+    }
+    align-items: center;
   }
 }
