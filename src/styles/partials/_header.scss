@@ -4,6 +4,8 @@
   justify-content: space-between;
   align-items: center;
 
+  font-size: 1.5rem;
+
   &__nav {
     display: flex;
 
@@ -16,7 +18,6 @@
 
   h1 {
     font-family: $ubuntu;
-    font-size: 2rem;
     font-weight: 400;
     letter-spacing: 0.2rem;
   }
