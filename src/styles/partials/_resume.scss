@@ -1,19 +1,21 @@
 .resume {
-  margin: $space-between-partials 0;
+  margin: $space-between-partials auto;
+  padding: 0 3rem;
   font-family: $montserrat;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 
+  max-width: $max-width;
   svg {
-    height: 6rem;
+    height: 5rem;
     width: auto;
   }
 
   &__entry {
-    padding: 0 2rem;
+    padding: 0 1rem;
     padding-bottom: 5rem;
-    flex-basis: 45rem;
+    flex-basis: 30rem;
 
     &:last-child {
       padding-bottom: 0;
@@ -22,10 +24,10 @@
 
   .entry__head {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     h1 {
-      margin: 1rem 0;
-      font-size: 3rem;
+      margin: 0.5rem 0;
+      font-size: 2rem;
       margin-left: 1rem;
     }
   }
@@ -36,7 +38,7 @@
   }
 
   .entry__text {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .entry__medal {

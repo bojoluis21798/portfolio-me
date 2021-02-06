@@ -29,8 +29,8 @@
 
   h1 {
     position: absolute;
-    left: 39%;
-    top: 0;
+    left: auto;
+    top: 2rem;
     z-index: 1;
     font-size: 5rem;
     font-weight: 800;
@@ -46,8 +46,8 @@
   &__logo {
     margin: auto;
 
-    width: 45rem;
-    height: 45rem;
+    width: 40rem;
+    height: 40rem;
 
     // border-radius: 50%;
     // border: 1px solid black;
@@ -61,14 +61,14 @@
       left: 7rem;
       top: 8rem;
       z-index: 1;
-      width: 35rem;
-      height: 35rem;
+      width: 26rem;
+      height: 26rem;
     }
 
     > svg {
       position: absolute;
-      width: 15rem;
-      height: 15rem;
+      width: 10rem;
+      height: 10rem;
 
       animation-name: rotating-inverse;
       animation-duration: 180s;

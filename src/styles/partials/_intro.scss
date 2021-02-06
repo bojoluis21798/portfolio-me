@@ -11,30 +11,33 @@
 }
 
 .intro {
-  margin: $space-between-partials 0;
+  margin: $space-between-partials auto;
   margin-top: 10rem;
   position: relative;
+
+  max-width: $max-width;
+
   &__background {
     position: absolute;
     right: 0;
     top: -5rem;
     z-index: -1;
 
-    width: 43rem;
-    height: 43rem;
-
     svg {
       position: absolute;
-      top: 0;
+      top: -5rem;
       right: 0;
-      width: 100%;
-      height: 100%;
+
+      width: 50rem;
+      height: 50rem;
     }
 
     .flyingwithlaptop {
       top: 5rem;
-      width: 80%;
-      height: 80%;
+
+      width: 35rem;
+      height: 35rem;
+
       animation-name: floating;
       animation-duration: 5s;
       animation-iteration-count: infinite;
