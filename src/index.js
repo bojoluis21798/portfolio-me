@@ -3,7 +3,11 @@ import "./styles/main.scss";
 const $ = require("jquery");
 //const nodemailer = require("nodemailer");
 
-$("#email-form").submit(function (event) {
+const emailForm = $("#email-form");
+
+emailForm.submit(function (event) {
   event.preventDefault();
-  const formData = $("#email-form").serializeArray();
+
+  const formData = emailForm.serializeArray();
+  emailForm.trigger("reset");
 });
