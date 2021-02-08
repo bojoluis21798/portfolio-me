@@ -39,7 +39,16 @@
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 
-    svg.person-float {
+    img.person-float,
+    > svg {
+      animation-name: rotating-inverse;
+      animation-duration: 180s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+
+    img.person-float {
+      position: absolute;
       left: 7rem;
       top: 8rem;
       z-index: 1;
@@ -51,11 +60,6 @@
       position: absolute;
       width: 10rem;
       height: 10rem;
-
-      animation-name: rotating-inverse;
-      animation-duration: 180s;
-      animation-timing-function: linear;
-      animation-iteration-count: infinite;
 
       &:nth-child(2) {
         left: 16rem;
