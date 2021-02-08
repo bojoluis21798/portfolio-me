@@ -2,7 +2,8 @@
   <%= require("../assets/clouds2.svg") %>
   <h1>Skills</h1>
   <div class="skills__logo">
-    <%= require("../assets/skills.svg") %> <%=
+    <img class="person-float" src="<%=
+    require("!url-loader!../assets/skills.svg").default %>" alt="skills"/><%=
     require("../assets/typescript.svg") %><%= require("../assets/react.svg")
     %><%= require("../assets/javascript.svg") %> <%=
     require("../assets/redux.svg") %> <%= require("../assets/sass.svg") %>
