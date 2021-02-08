@@ -32,5 +32,9 @@
     "webpack": "^5.19.0",
     "webpack-cli": "^4.4.0",
     "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "nodemailer": "^6.4.17"
   }
 }
