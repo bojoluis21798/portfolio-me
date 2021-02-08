@@ -23,6 +23,8 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
  *
  */
 
+const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
+
 module.exports = {
   mode: "development",
 
@@ -34,6 +36,7 @@ module.exports = {
       fileName: "index.html",
       template: "./src/main.ejs",
     }),
+    new FaviconsWebpackPlugin("./src/assets/me.svg"),
   ],
 
   output: {
