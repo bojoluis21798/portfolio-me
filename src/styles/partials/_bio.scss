@@ -29,11 +29,19 @@
     padding: 2rem;
     width: 30rem;
     height: 30rem;
-    svg {
+    .sitting {
       right: 0;
       top: 0;
       width: 100%;
       height: 100%;
+    }
+
+    g.browser {
+      animation: floatingY 20s linear infinite;
+    }
+
+    g.mobile {
+      animation: floatingY 10s linear infinite;
     }
   }
 }
