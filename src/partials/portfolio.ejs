@@ -2,9 +2,62 @@
   <div class="portfolio">
     <h1>Recent Work</h1>
     <div class="card-container">
-      <div class="work-card getall"><%= require("../assets/getall.svg") %></div>
-      <div class="work-card"><%= require("../assets/speedregalo.svg") %></div>
+      <div class="work-card getall">
+        <div class="work-description">
+          <div class="work-description__body">
+            <div>
+              <h2>GetAll Content Mangement System</h2>
+              <p>
+                Responsible for developing and maintaining a content managment
+                system for the app GetAll, a parcel / food delivery app.
+              </p>
+              <p>
+                Technologies used: React, Redux, Javascript, Styled Components,
+                Ant Design
+              </p>
+            </div>
+          </div>
+        </div>
+        <%= require("../assets/getall.svg") %>
+      </div>
+      <div class="work-card">
+        <div class="work-description">
+          <div class="work-description__body">
+            <div>
+              <h2>Speed Regalo</h2>
+              <p>
+                Speed Regalo is a website where you can buy gifts for your loved
+                ones. I was responsible for turning a client's design into
+                frontend code.
+              </p>
+              <p>Technologies used: SASS, BEM, Adobe XD</p>
+            </div>
+            <div class="work-description__footer">
+              <a href="https://www.speedregalo.com.ph/"
+                ><p class="work-link">Click to proceed to link</p></a
+              >
+            </div>
+          </div>
+        </div>
+        <%= require("../assets/speedregalo.svg") %>
+      </div>
       <div class="work-card blitz">
+        <div class="work-description">
+          <div class="work-description__body">
+            <div>
+              <h2>Blitz Trivia</h2>
+              <p>Developed a personal trivia app using Open Trivia API.</p>
+              <p>
+                Technologies used: React, MobX, Typescript, Styled Components
+              </p>
+            </div>
+            <div class="work-description__footer">
+              <a href="http://blitz-trivia-27d53.firebaseapp.com/"
+                ><p class="work-link">Click to proceed to link</p></a
+              >
+            </div>
+          </div>
+        </div>
         <img src="<%= require("../assets/blitz.png").default %>" />
       </div>
     </div>

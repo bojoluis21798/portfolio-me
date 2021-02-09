@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&family=Ubuntu+Mono&display=swap");
 
+@import "variables/fonts";
+@import "variables/color";
+@import "variables/margins";
+
 @import "global/body";
 
 @import "animations/floating";
 @import "animations/rotating";
-
-@import "variables/fonts";
-@import "variables/color";
-@import "variables/margins";
 
 @import "partials/bio";
 @import "partials/header";
