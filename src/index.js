@@ -1,35 +1,57 @@
 import "./styles/main.scss";
 
 const $ = require("jquery");
+const emailjs = require("emailjs-com");
 
-// Contact us send to my email
-$("#email-form").submit(function (event) {
-  event.preventDefault();
+const config = require("../config/credentials.json");
 
-  const formData = $(this).serializeArray();
+$(function () {
+  const breadcrumb = $("#breadcrumb");
+  breadcrumb.hide();
 
-  const sendButton = $("#send");
-  const form = [$("#name"), $("#email"), $("#message"), sendButton];
+  // Contact us send to my email
+  $("#email-form").submit(function (event) {
+    event.preventDefault();
 
-  // SENDING STATUS
-  form.forEach((f) => f.prop("disabled", true));
-  sendButton.toggleClass("sending");
-  sendButton.val("Sending");
+    const user_name = $("#name");
+    const user_email = $("#email");
+    const message = $("#message");
+    const form = [user_name, user_email, message];
 
-  new Promise((r) => setTimeout(r, 1000))
-    .then(() => {
-      // SENT STATUS
-      form.forEach((f) => f.prop("disabled", false));
-      sendButton.toggleClass("sending");
-      sendButton.toggleClass("sent");
-      sendButton.val("Sent");
+    // SENDING STATUS
+    form.forEach((f) => f.prop("disabled", true));
 
-      $(this).trigger("reset");
-    })
-    .then(() => new Promise((r) => setTimeout(r, 3000)))
-    .then(() => {
-      // RESET STATUS
-      sendButton.val("Send");
-      sendButton.toggleClass("sent");
-    });
+    const formData = {
+      user_name: user_name.val(),
+      user_email: user_email.val(),
+      message: message.val(),
+    };
+
+    emailjs
+      .send(config.service_id, config.template_id, formData, config.user_id)
+      .then(() => {
+        breadcrumb.text("Message Sent");
+        $(this).trigger("reset");
+      })
+      .catch(() => {
+        breadcrumb.toggleClass("breadcrumb--failed");
+        breadcrumb.text(
+          "Sorry, we could't send your message. Please try again"
+        );
+      })
+      .finally(() => {
+        breadcrumb.show();
+        breadcrumb.toggleClass("breadcrumb--show");
+
+        form.forEach((f) => f.prop("disabled", false));
+
+        return new Promise((r) => setTimeout(r, 5000));
+      })
+      .then(() => {
+        breadcrumb.toggleClass(
+          ["breadcrumb--show", "breadcrumb--failed"],
+          false
+        );
+      });
+  });
 });
