@@ -26,8 +26,8 @@
     margin: 1rem 0.5rem;
     padding: 5rem;
 
-    width: 14rem;
-    height: 12rem;
+    width: 25rem;
+    height: 25rem;
 
     svg,
     img {
@@ -46,6 +46,12 @@
     transition: opacity 0.3s ease-in;
     color: #fff;
 
+    font-size: 1.9rem;
+
+    a {
+      font-size: 1.9rem;
+    }
+
     &__body {
       display: flex;
       flex-direction: column;
@@ -63,15 +69,10 @@
         margin: 0.5rem 0;
       }
     }
-
-    p {
-      font-size: 1.2rem;
-    }
   }
 
   .work-link {
     text-decoration: underline;
-    font-size: 1.2rem;
     font-weight: 800;
   }
 
