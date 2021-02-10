@@ -3,9 +3,26 @@
   <h1>Skills</h1>
   <div class="skills__logo">
     <img class="person-float" src="<%=
-    require("!url-loader!../assets/skills.svg").default %>" alt="skills"/><%=
-    require("../assets/typescript.svg") %><%= require("../assets/react.svg")
-    %><%= require("../assets/javascript.svg") %> <%=
-    require("../assets/nodejs.svg") %> <%= require("../assets/sass.svg") %>
+    require("!url-loader!../assets/skills.svg").default %>" alt="skills"/>
+    <div class="logo-group">
+      <h3 class="logo-title">Typescript</h3>
+      <%= require("../assets/typescript.svg") %>
+    </div>
+    <div class="logo-group">
+      <h3 class="logo-title">React</h3>
+      <%= require("../assets/react.svg") %>
+    </div>
+    <div class="logo-group">
+      <h3 class="logo-title">Javascript</h3>
+      <%= require("../assets/javascript.svg") %>
+    </div>
+    <div class="logo-group">
+      <h3 class="logo-title">Node.js</h3>
+      <%= require("../assets/nodejs.svg") %>
+    </div>
+    <div class="logo-group">
+      <h3 class="logo-title">SASS</h3>
+      <%= require("../assets/sass.svg") %>
+    </div>
   </div>
 </div>
