@@ -34,7 +34,7 @@ module.exports = {
       fileName: "index.html",
       template: "./src/main.ejs",
     }),
-    new FaviconsWebpackPlugin("./src/assets/me.svg"),
+    new FaviconsWebpackPlugin("./src/assets/me.png"),
   ],
 
   entry: "./src/index.js",
