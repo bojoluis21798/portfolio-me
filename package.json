@@ -7,7 +7,7 @@
     "build": "webpack --config webpack.prod.js",
     "dev": "webpack serve --watch --config webpack.dev.js",
     "start": "node server.js",
-    "deploy": "yarn build && git push heroku master"
+    "deploy": "git push heroku master"
   },
   "author": "",
   "license": "ISC",
