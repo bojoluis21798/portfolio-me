@@ -26,8 +26,6 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
 
 module.exports = {
-  mode: "development",
-
   plugins: [
     new webpack.ProgressPlugin(),
     new MiniCssExtractPlugin({ filename: "main.css" }),
@@ -38,6 +36,8 @@ module.exports = {
     }),
     new FaviconsWebpackPlugin("./src/assets/me.svg"),
   ],
+
+  entry: "./src/index.js",
 
   output: {
     publicPath: "",
@@ -89,11 +89,5 @@ module.exports = {
         loader: "file-loader",
       },
     ],
-  },
-
-  devServer: {
-    open: true,
-    host: "localhost",
-    port: 3000,
   },
 };
