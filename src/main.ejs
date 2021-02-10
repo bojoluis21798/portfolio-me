@@ -5,6 +5,9 @@
     <title>Boj.</title>
   </head>
   <body>
-    <div id="app"><%= require("./partials").map(val=>val).join("") %></div>
+    <div id="app">
+      <div id="breadcrumb" class="breadcrumb"></div>
+      <%= require("./partials").map(val=>val).join("") %>
+    </div>
   </body>
 </html>
