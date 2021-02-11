@@ -20,16 +20,20 @@
 
   svg.clouds2 {
     position: absolute;
-    top: 0rem;
-    width: auto;
-    height: 69rem;
+    top: 10rem;
+
+    height: auto;
+
+    max-width: 80rem;
+    width: 200vw;
   }
 
   &__logo {
     margin: auto;
+    z-index: 2;
 
-    width: 40rem;
-    height: 40rem;
+    width: 30rem;
+    height: 30rem;
 
     // border-radius: 50%;
     // border: 1px solid black;
@@ -49,17 +53,17 @@
 
     img.person-float {
       position: absolute;
-      left: 7rem;
-      top: 8rem;
+      left: 6rem;
+      top: 5rem;
       z-index: 1;
-      width: 26rem;
-      height: 26rem;
+      width: 20rem;
+      height: 20rem;
     }
 
     .logo-group {
       position: absolute;
-      width: 10rem;
-      height: 10rem;
+      width: 7rem;
+      height: 7rem;
 
       .logo-title {
         z-index: 2;
@@ -72,24 +76,24 @@
       }
 
       &:nth-child(2) {
-        left: 16rem;
-        top: -7rem;
+        left: 11rem;
+        top: -4rem;
       }
       &:nth-child(3) {
-        left: 38rem;
-        top: 11rem;
+        right: -3rem;
+        top: 8rem;
       }
       &:nth-child(4) {
-        left: 26rem;
-        top: 35rem;
+        left: 21rem;
+        bottom: 0rem;
       }
       &:nth-child(5) {
-        left: -1rem;
-        top: 31rem;
+        left: 4rem;
+        bottom: 0rem;
       }
       &:nth-child(6) {
-        left: -6rem;
-        top: 7rem;
+        left: -3rem;
+        top: 9rem;
       }
     }
   }
