@@ -3,6 +3,9 @@
 @import "variables/fonts";
 @import "variables/color";
 @import "variables/margins";
+@import "variables/breakpoints";
+
+@import "mixins/mediaqueries";
 
 @import "global/body";
 @import "global/breadcrumb";
