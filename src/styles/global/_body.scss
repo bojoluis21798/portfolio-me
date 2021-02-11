@@ -1,11 +1,15 @@
 html {
   font-size: 9px;
 
-  @include respond($breakpoint-mobile-small) {
-    font-size: 10px;
+  @include respond($breakpoint-mobile-medium) {
+    font-size: 11px;
   }
 
   @include respond($breakpoint-tablet) {
+    font-size: 14px;
+  }
+
+  @include respond($breakpoint-laptop) {
     font-size: 16px;
   }
 }
