@@ -1,11 +1,16 @@
 .portfolio {
   margin: $space-between-partials 0;
-  padding: 0 5rem;
+  padding: 2rem;
   font-family: $montserrat;
+
+  h1,
+  h2,
+  p {
+    margin: 0.5rem;
+  }
 
   h1 {
     font-size: 3rem;
-    margin: 0;
   }
 
   .card-container {
@@ -26,8 +31,8 @@
     margin: 1rem 0.5rem;
     padding: 5rem;
 
-    width: 25rem;
-    height: 25rem;
+    width: 20rem;
+    height: 16rem;
 
     svg,
     img {
@@ -46,10 +51,15 @@
     transition: opacity 0.3s ease-in;
     color: #fff;
 
-    font-size: 1.9rem;
-
+    h2 {
+      font-size: 1.8rem;
+    }
     a {
       font-size: 1.9rem;
+    }
+
+    p {
+      font-size: 1.7rem;
     }
 
     &__body {
