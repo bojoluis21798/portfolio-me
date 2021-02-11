@@ -9,10 +9,12 @@ function contactFormSubmit(event) {
   const user_name = $("#name");
   const user_email = $("#email");
   const message = $("#message");
-  const form = [user_name, user_email, message];
+  const submitButton = $("#send");
+  const form = [user_name, user_email, message, submitButton];
 
   // SENDING STATUS
   form.forEach((f) => f.prop("disabled", true));
+  submitButton.toggleClass("send--disabled");
 
   const formData = {
     user_name: user_name.val(),
@@ -35,6 +37,7 @@ function contactFormSubmit(event) {
       breadcrumb.toggleClass("breadcrumb--show");
 
       form.forEach((f) => f.prop("disabled", false));
+      submitButton.toggleClass("send--disabled");
 
       return new Promise((r) => setTimeout(r, 5000));
     })
