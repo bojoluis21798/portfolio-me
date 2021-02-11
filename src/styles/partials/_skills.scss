@@ -1,7 +1,6 @@
 .skills {
   margin: $space-between-partials 0;
-  padding: 7rem 0;
-  padding-top: 20rem;
+  padding: 5rem 0;
   position: relative;
 
   display: flex;
@@ -12,7 +11,7 @@
   h1 {
     position: absolute;
     left: auto;
-    top: 7rem;
+    top: -7rem;
     z-index: 1;
     font-size: 3rem;
     font-weight: 800;
@@ -21,7 +20,7 @@
 
   svg.clouds2 {
     position: absolute;
-    top: 10rem;
+    top: -10rem;
 
     height: auto;
 
