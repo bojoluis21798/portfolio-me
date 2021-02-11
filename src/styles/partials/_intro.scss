@@ -13,18 +13,22 @@
 
     svg {
       position: absolute;
-      top: -5rem;
-      right: 0;
+      top: 0;
+      right: -2rem;
 
-      width: 50rem;
-      height: 50rem;
+      width: 85vw;
+
+      max-width: 50rem;
+      height: auto;
     }
 
     .flyingwithlaptop {
       top: 5rem;
 
-      width: 35rem;
-      height: 35rem;
+      height: auto;
+
+      width: 59vw;
+      max-width: 35rem;
 
       animation-name: floating;
       animation-duration: 5s;
