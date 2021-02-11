@@ -1,6 +1,6 @@
 import $ from "jquery";
-import emailjs from "emailjs-com";
-import config from "../../config/credentials.json";
+// import emailjs from "emailjs-com";
+// import config from "../../config/credentials.json";
 
 function contactFormSubmit(event) {
   event.preventDefault();
@@ -22,8 +22,9 @@ function contactFormSubmit(event) {
     message: message.val(),
   };
 
-  emailjs
-    .send(config.service_id, config.template_id, formData, config.user_id)
+  // emailjs
+  //   .send(config.service_id, config.template_id, formData, config.user_id)
+  new Promise((r = setTimeout(r, 1000)))
     .then(() => {
       breadcrumb.text("Message Sent");
       $(this).trigger("reset");
