@@ -1,16 +1,21 @@
 .header {
-  margin: 1rem 3rem;
+  margin: 1.5em;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   font-size: 1.5rem;
 
+  h1,
+  h2 {
+    margin: 0;
+  }
+
   &__nav {
     display: flex;
 
     > h2 {
-      margin-left: 2rem;
+      margin-left: 0.5em;
       font-family: $montserrat;
       font-weight: 400;
     }
@@ -19,6 +24,6 @@
   h1 {
     font-family: $ubuntu;
     font-weight: 400;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.1em;
   }
 }
