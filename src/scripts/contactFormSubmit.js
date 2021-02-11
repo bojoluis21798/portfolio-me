@@ -24,7 +24,7 @@ function contactFormSubmit(event) {
 
   // emailjs
   //   .send(config.service_id, config.template_id, formData, config.user_id)
-  new Promise((r = setTimeout(r, 1000)))
+  new Promise((r) => setTimeout(r, 1000))
     .then(() => {
       breadcrumb.text("Message Sent");
       $(this).trigger("reset");
