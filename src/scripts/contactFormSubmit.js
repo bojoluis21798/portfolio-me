@@ -1,5 +1,5 @@
 import $ from "jquery";
-// import emailjs from "emailjs-com";
+import axios from "axios";
 // import config from "../../config/credentials.json";
 
 function contactFormSubmit(event) {
@@ -22,9 +22,8 @@ function contactFormSubmit(event) {
     message: message.val(),
   };
 
-  // emailjs
-  //   .send(config.service_id, config.template_id, formData, config.user_id)
-  new Promise((resolve, reject) => reject())
+  axios
+    .post("/api/send-mail", formData)
     .then(() => {
       breadcrumb.text("Message Sent");
       $(this).trigger("reset");
