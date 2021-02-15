@@ -2,13 +2,13 @@
 
 [Deployed on Heroku](https://bojo-portfolio.herokuapp.com/)
 
-##Build App
+## Build App
 
 ```bash
 yarn build
 ```
 
-##Run locally
+## Run locally
 
 ```bash
 yarn dev
