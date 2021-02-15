@@ -34,7 +34,13 @@ module.exports = {
       fileName: "index.html",
       template: "./src/main.ejs",
     }),
-    new FaviconsWebpackPlugin("./src/assets/me.png"),
+    new FaviconsWebpackPlugin({
+      logo: "./src/assets/og-image.png",
+      favicons: {
+        background: "#4FBFFF",
+        theme_color: "#4FBFFF",
+      },
+    }),
   ],
 
   entry: "./src/index.js",
