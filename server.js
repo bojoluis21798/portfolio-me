@@ -21,8 +21,8 @@ app.post("/api/send-mail", async function (req, res) {
     const { user_name, user_email, message } = req.body;
 
     const info = await transporter.sendMail({
-      from: "portfolio.message@hotmail.com",
-      to: "portfolio.message@hotmail.com",
+      from: process.env.EMAIL,
+      to: process.env.EMAIL,
       subject: `Message from ${user_name}`,
       text: `
         ${message}
