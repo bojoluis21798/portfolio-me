@@ -16,6 +16,13 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, "dist")));
 app.set("port", process.env.PORT || 8080);
 
+app.get(
+  `/.well-known/pki-validation/${process.env.TEXT_KEY}.txt`,
+  async (_, res) => {
+    res.status(200).send(`${process.env.TEXT_CONTENT}`);
+  }
+);
+
 app.post("/api/send-mail", async function (req, res) {
   try {
     const { user_name, user_email, message } = req.body;
