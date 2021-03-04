@@ -1,5 +1,4 @@
 node_modules
 dist
 .env
-.well-known
 yarn-error.log
